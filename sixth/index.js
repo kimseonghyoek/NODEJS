@@ -5,7 +5,7 @@ const app = express();
 app.set('port', process.env.PORT || 3000);
 
 app.use((req, res, next) => {
-    cosnoel.log('모든 요청에 다 실행됩니다.');
+    console.log('모든 요청에 다 실행됩니다.');
     next();
 });
 app.get('/', (res, req, next) => {
